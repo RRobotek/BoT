@@ -1,0 +1,55 @@
+{
+  "name": "vue-connect-wallet",
+  "description": "Vue UI Button + Utils for Connecting a web3 Wallet (TS Support)",
+  "private": false,
+  "version": "0.1.7",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "main": "./dist/vcw.umd.js",
+  "module": "./dist/vcw.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vcw.es.js",
+      "require": "./dist/vcw.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "./dist",
+  "author": {
+    "name": "Neelansh Mathur",
+    "email": "neelansh.m@somaiya.edu",
+    "url": "https://github.com/neelansh15"
+  },
+  "keywords": ["vue", "vue3", "vuejs", "connect wallet", "useWallet", "vue connect wallet", "vue-connect-wallet", "metamask", "connect"],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "color": "^3.1.0",
+    "mersenne-twister": "^1.1.0",
+    "vue-demi": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.25",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "tsup": "^5.12.7",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.5",
+    "vite-plugin-dts": "^1.1.1",
+    "vue": "^3.2.25",
+    "vue-tsc": "^0.34.7"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.1",
+    "vue": "^2.0.0 || >=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@vue/composition-api": {
+      "optional": true
+    }
+  }
+}
